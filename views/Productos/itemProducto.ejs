@@ -1,0 +1,11 @@
+<%- include ('../Layouts/Header', {title: "Item de Productos"}) %> 
+
+
+<li>
+    <a href="/productos/<%= producto._id %>"><%= producto.name %></a>
+    Precio: $<%= producto.price %>
+    <a href="/productos/<%= producto._id %>/eliminar">Eliminar</a>
+
+</li>
+
+<%- include ('../Layouts/Footer', {title: "Item de Productos"}) %> 
